@@ -54,8 +54,11 @@ public class Principal {
                     System.out.println("Digite o ano de fundacao");
                     int ano = scanner.nextInt();
                     scanner.nextLine();
+                    System.out.println("Digite a quantidade de produtos existentes");
+                    int quantidadeProdutos = scanner.nextInt();
+                    scanner.nextLine();
 
-                    Loja loja1 = new Loja(nome, quantidadeDeFuncionarios, salarioBaseFuncionario, new Endereco(nomeDaRua, cidade, estado, pais, cep, numero, complemento), new Data(dia, mes, ano));
+                    Loja loja1 = new Loja(nome, quantidadeDeFuncionarios, salarioBaseFuncionario, new Endereco(nomeDaRua, cidade, estado, pais, cep, numero, complemento), new Data(dia, mes, ano), quantidadeProdutos);
                     System.out.println(loja1);
                     break;
                 }
